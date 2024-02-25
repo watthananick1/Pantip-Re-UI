@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import Grid from '@mui/material/Grid';
 import { Panel } from 'primereact/panel';
 import Content from './content/Content';
@@ -6,7 +6,6 @@ import Footer from '../footer/Footer';
 import { Tag } from 'primereact/tag';
 import { Divider } from 'primereact/divider';
 import { Carousel, CarouselResponsiveOption } from 'primereact/carousel';
-import { Button } from 'primereact/button';
 
 interface Product {
     id: string;

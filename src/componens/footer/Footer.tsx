@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Button } from 'primereact/button';
 import { Card } from 'primereact/card';
 

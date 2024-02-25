@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 // import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import InputBase from '@mui/material/InputBase';
+
 import SearchIcon from '@mui/icons-material/Search';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import NotificationsNoneOutlinedIcon from '@mui/icons-material/NotificationsNoneOutlined';
@@ -13,7 +13,7 @@ import DehazeOutlinedIcon from '@mui/icons-material/DehazeOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Divider from '@mui/material/Divider';
 import AmenitiesBar from './amenitiesBar/AmenitiesBar';
-import Paper from '@mui/material/Paper';
+
 import { Button } from 'primereact/button';
 // import IconButton from '@mui/material/IconButton';
 import { InputText } from "primereact/inputtext";
@@ -30,45 +30,6 @@ const Image = styled('img')({
     maxHeight: '50%',
     objectFit: 'contain',
 });
-
-const Search = styled(Paper)(({ theme }) => ({
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: theme.palette.background.paper,
-    '&:hover': {
-        backgroundColor: theme.palette.background.default,
-    },
-    marginRight: theme.spacing(2),
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-        marginLeft: theme.spacing(3),
-        width: 'auto',
-    },
-}));
-
-const SearchIconWrapper = styled('div')(({ theme }) => ({
-    padding: theme.spacing(0, 1, 0, 1),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-    color: 'inherit',
-    '& .MuiInputBase-input': {
-        padding: theme.spacing(1, 1, 1, 1),
-        marginLeft: `calc(1em + ${theme.spacing(4)})`,
-        transition: theme.transitions.create('width'),
-        width: '100%',
-        [theme.breakpoints.up('md')]: {
-            width: '20ch',
-        },
-    },
-}));
 
 export default class Body extends Component {
 
